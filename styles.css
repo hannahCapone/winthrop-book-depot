@@ -1,0 +1,195 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5CAA7F;
+    padding: 1rem;
+}
+
+.navbar .logo img {
+    height: 50px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.navbar a:hover {
+    background-color: #508669;
+    transition: 0.3s;
+}
+
+.hero {
+    background: url('coffee-shop.jpg') no-repeat center center/cover;
+    height: 800px;
+    color: #5CAA7F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero0 {
+    background: #ffffff;
+    height: 50px;
+    font-size : 2rem;
+    color: #5CAA7F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    /* color: #074b2d; Change this if you want to set a different color for h1 */
+}
+
+.hero h1 span {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: rainbow-text-animation 5s linear infinite;
+}
+
+@keyframes rainbow-text-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.content {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.instagram-posts {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+}
+
+.instagram-post {
+    justify-content: center; /* Center items horizontally */
+    max-width: 300px; /* Adjust width as needed */
+    margin: 30px; /* Add margin between posts */
+    box-sizing: border-box; 
+}
+
+.section {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #5CAA7F
+}
+
+.section h2 {
+    border-bottom: 2px solid #5CAA7F;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+.owner-profile {
+    display: flex;
+    align-items: center; /* Vertically align the image with the text */
+    justify-content: center;
+    gap: 20px; /* Space between image and description */
+}
+
+.owner-profile img {
+    max-width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 8px; /* Optional: Rounded corners for a polished look */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 1rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section p, .footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input[type="email"] {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #575757;
+    padding-top: 1rem;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.menu-images {
+    display: grid;
+    background-color: #101010;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px; /* 20px gap between images */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 40px auto; /* Spacing above and below the image section */
+    max-width: 80%; /* To center the grid container */
+}
+
+.menu-images img {
+    max-width: 100%; /* Ensure images fit within the grid cell */
+    height: auto;
+}
